@@ -6,4 +6,6 @@ TODO: Reflect on what you learned this week and what is still unclear.
 
 side note why is vcs yelling at me for using the word "eventually"? that seems quite disrespectful. Okay now it's yelling at me for using "quite". Apparently it's a weasel word...
 
-18:12 update - I think I have now finished everything.
+18:12 update - I think I have now finished everything.... it didnt work.
+
+18:24 wow I missed the most obvious thing. Forgot to update my name in the aboutMe. Trying again...

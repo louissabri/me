@@ -8,4 +8,6 @@ side note why is vcs yelling at me for using the word "eventually"? that seems q
 
 18:12 update - I think I have now finished everything.... it didnt work.
 
-18:24 wow I missed the most obvious thing. Forgot to update my name in the aboutMe. Trying again...
+18:24 wow I missed the most obvious thing. Forgot to update my name in the aboutMe. Trying again... failed.
+
+I missed yet another thing. Okay this should be the very last time.

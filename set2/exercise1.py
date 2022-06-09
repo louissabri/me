@@ -14,20 +14,19 @@ import platform
 
 # I think this will print "hello! Let's get started" by calling the print function.
 print("hello! Let's get started")  # it printed "hello! Let's get started"
-
+# this is a list
 some_words = ["what", "does", "this", "line", "do", "?"]
-
+# this is a loop, it will go through the list and print the word listed
 for word in some_words:
-    print(word)
-
+    print(word)  # it did that
+# Ben said same as above,
 for x in some_words:
     print(x)
-
+# print the list
 print(some_words)
-
+# Len returns the number of items in an object. So if the number of items in a word (string) is greater than 3, it will print "some_words contains more than 3 words"
 if len(some_words) > 3:
-    print("some_words contains more than 3 words")
-
+    print("some_words contains more than 3 words") # I was kinda wrong, Amber kindly explained that the Len function is actually counting the number of items in the list, not the number of characters in each individual list item.
 
 def usefulFunction():
     """
@@ -35,7 +34,8 @@ def usefulFunction():
     what the line below does:
     https://docs.python.org/3/library/platform.html#platform.uname
     """
+    # platform.uname gets information about the current OS. Printing this will print the information. This function will print information about the current operating system.
     print(platform.uname())
 
 
-usefulFunction()
+usefulFunction() # It did what I thought it would!

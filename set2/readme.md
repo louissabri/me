@@ -11,3 +11,5 @@ TODO: Reflect on what you learned this week and what is still unclear.
 17:47 I wrote the above comments over like an hour because I kept getting distracted
 
 18:16 now that I am no longer distracted I am getting a lot more done lol. Amber was very helpful.
+
+Note to self: Ask ben about BVN & what to write in these lab books

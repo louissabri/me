@@ -17,3 +17,9 @@ Note to self: Ask ben about BVN & what to write in these lab books
 16:09 (week 3) I did not finish everything that I was meant to last week, I have a lot of work to catch up on now.
 
 17:00 Ok im not as far behind as i thought I was. Currently up to set 2 ex 3. Will finish this asap and move on to set 3 tonight.
+
+17:03 (working on is_odd). the % sign is an operator in python, it returns the remainder of a division. I can use this to work out if a number is odd or even, then return a true value. Main problem is the syntax here, I don't know how to write what my brain has cooked up.
+
+Update: forgot to add the else part of the if loop, but other than that it worked perfectly! Figuring out syntax is kinda tough.
+
+17:58 I've discovered that randomly typing stuff that I think *should* make sense, usually makes sense. Google also helps.

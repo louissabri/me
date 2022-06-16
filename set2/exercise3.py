@@ -1,5 +1,9 @@
-x`# -*- coding: UTF-8 -*-
+"""x`# -*- coding: UTF-8 -*-"""
 """Modify each function until the tests pass."""
+
+
+from ast import Return, While
+from shutil import move
 
 
 def is_odd(a_number):
@@ -13,7 +17,10 @@ def is_odd(a_number):
 
     So if a_number modulo two is zero, then it's even.
     """
-    return None
+    if(a_number % 2) == 0:
+     return False
+    else:
+        return True
 
 
 def fix_it(moves=True, should_move=True):
@@ -31,7 +38,14 @@ def fix_it(moves=True, should_move=True):
     Most people write this function with 4 return statements.
     As an extra challenge, see if you can get that down to three.
     """
-    return None
+    if moves and should_move or not moves and not should_move:
+        return "No Problem"
+    elif moves and not should_move:
+        return "Duct Tape"
+    elif not moves and should_move:
+        return "WD-40"
+    
+
 
 
 def loops_preview():

@@ -23,3 +23,5 @@ Note to self: Ask ben about BVN & what to write in these lab books
 Update: forgot to add the else part of the if loop, but other than that it worked perfectly! Figuring out syntax is kinda tough.
 
 17:58 I've discovered that randomly typing stuff that I think *should* make sense, usually makes sense. Google also helps.
+
+18:43 I've now discovered you need to "close" loops

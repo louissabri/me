@@ -68,7 +68,10 @@ def loops_1a():
     return a list of 10 items, each one a string with exacly one star in it.
     E.g.: ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*']
     """
-    return None
+    star_list = []
+    for i in range(10):
+        star_list.append("*")
+    return star_list
 
 
 def loops_1c(number_of_items=5, symbol="#"):
@@ -81,7 +84,10 @@ def loops_1c(number_of_items=5, symbol="#"):
     Remember that you're being passed arguments here. Don't hard code the number
     or the symbol, let it be whatever it wants to be.
     """
-    return None
+    your_list = []
+    for i in range(number_of_items):
+        your_list.append(symbol)
+    return your_list
 
 
 def loops_2():
@@ -102,7 +108,15 @@ def loops_2():
             ['*', '*', '*', '*', '*', '*', '*', '*', '*', '*'],
           ]
     """
-    return None
+    starfield = []
+    for i in range(10):
+        star_list = []
+        for j in range(10):
+            star_list.append("*")
+        starfield.append(star_list)
+    return starfield
+            
+    
 
 
 def loops_3():
@@ -126,7 +140,22 @@ def loops_3():
     TIP: notice that this needs to to return strings of numbers,
          so call str(number) to cast.
     """
-    return None
+    full_list = []
+
+    for x in range(10):
+
+        base_list = []
+        base_list.clear
+
+        for y in range(10):
+
+            base_list.append(str(x))
+
+        full_list.append(base_list)
+
+    return full_list
+
+
 
 
 def loops_4():
@@ -146,7 +175,19 @@ def loops_4():
       ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
     ]
     """
-    return None
+    full_list = []
+
+    for x in range(10):
+
+        base_list = []
+
+        for y in range(10):
+
+            base_list.append(str(y))
+
+        full_list.append(base_list)
+
+    return full_list
 
 
 def loops_5():
@@ -176,7 +217,27 @@ def loops_5():
         f"There are {num_bottles} green bottles"
     you'll come to see the pros and cons of each over time.
     """
-    return None
+    full_list = []
+
+    for i in range(10):
+
+        base_list = []
+
+        for j in range(5):
+
+            base_list.append("(")
+
+            base_list.append("i" + str(i))
+
+            base_list.append(",")
+
+            base_list.append( "j" + str(j) )
+
+            base_list.append("), ")
+
+        full_list.append(base_list)
+    
+    return full_list
 
 
 def loops_6():

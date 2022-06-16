@@ -13,3 +13,7 @@ TODO: Reflect on what you learned this week and what is still unclear.
 18:16 now that I am no longer distracted I am getting a lot more done lol. Amber was very helpful.
 
 Note to self: Ask ben about BVN & what to write in these lab books
+
+16:09 (week 3) I did not finish everything that I was meant to last week, I have a lot of work to catch up on now.
+
+17:00 Ok im not as far behind as i thought I was. Currently up to set 2 ex 3. Will finish this asap and move on to set 3 tonight.

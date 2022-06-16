@@ -19,7 +19,7 @@ some_words = ["what", "does", "this", "line", "do", "?"]
 # this is a loop, it will go through the list and print the word listed
 for word in some_words:
     print(word)  # it did that
-# Ben said same as above,
+# Ben said same as above, this is the same just with a different variable name (word vs x)
 for x in some_words:
     print(x)
 # print the list

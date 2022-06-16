@@ -17,7 +17,7 @@ def getLetter(index):
 
 
 def set2exersise2(): # this is semi-right
-    indices = [12: 2, 26, 7, 0, 12, 12, 4, 17] # the error messages aren't always helpful 😿
+    indices = [12, 2, 26, 7, 0, 12, 12, 4, 17] # the error messages aren't always helpful 😿
     wordArray = [getLetter(x) for x in indices]
     wordArray[0] = wordArray[0].upper()
     wordArray [1] = wordArray[1].upper() # <-- assigning to an array, another bracket problem

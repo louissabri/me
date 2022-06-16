@@ -38,7 +38,7 @@ def add_5(a_number):
     This isn't a trick!
     First thing to do is to remove the the_answer = None
 
-    return the_answer. That's just tellign python that
+    return the_answer. That's just telling python that
     the empty block is intentional - it's python's "this page is intentionally
     left blank"
     Then you need to:

@@ -5,6 +5,8 @@
 from ast import Return, While
 from shutil import move
 
+from numpy import full
+
 
 def is_odd(a_number):
     """Return True if a_number is odd, and False if a_number is even.
@@ -225,15 +227,7 @@ def loops_5():
 
         for j in range(5):
 
-            base_list.append("(")
-
-            base_list.append("i" + str(i))
-
-            base_list.append(",")
-
-            base_list.append( "j" + str(j) )
-
-            base_list.append("), ")
+         base_list.append(f"(i{i}, j{j})")
 
         full_list.append(base_list)
     
@@ -260,7 +254,21 @@ def loops_6():
     You can use a variable.
     TIP: look out for the starting condition.
     """
-    return None
+    
+    full_list = []
+
+    for i in range(10):
+
+        base_list = []
+
+        for j in range(i + 1):
+
+            base_list.append(str(j))
+        
+        full_list.append(base_list)
+
+    return full_list
+
 
 
 def loops_7():
@@ -284,7 +292,19 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    return None
+    full_list = []
+
+    for i in range(5):
+
+        row = []
+
+        for j in range(9):
+
+            row.append("*") 
+
+        full_list.append(row)
+
+    return full_list
 
 
 def little_printer(some_kind_of_list, exercise_name):

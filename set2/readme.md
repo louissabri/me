@@ -24,4 +24,14 @@ Update: forgot to add the else part of the if loop, but other than that it worke
 
 17:58 I've discovered that randomly typing stuff that I think *should* make sense, usually makes sense. Google also helps.
 
-18:43 I've now discovered you need to "close" loops
+18:43 I've now discovered you need to "close" loops.
+
+20/06/2022
+
+18:41 I've got the current exercise (loops_5, coordinates) working conceptually, but need to get the formatting right. At the moment I'm concatenating the strings, but I have realised the limitations of using this method. I am now looking into using format & f strings.
+
+I feel like I am starting to understand programming.
+
+11:10 Question, to "call" something means to run that code/function right? 
+
+(p.s. I havent been working this whole time on one problem dont worry, I went to get snacks then accidentally didnt come back for a while).

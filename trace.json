@@ -2,7 +2,7 @@
   "1",
   {
     "of_total": 35,
-    "mark": 34,
+    "mark": 35,
     "results": [
       {
         "value": 1,
@@ -137,7 +137,7 @@
         "name": "Exercise 3: loops_6 - make a wedge"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 3: loops_7 - pyramid of stars"
       },
       {

@@ -5,7 +5,7 @@
 from ast import Return, While
 from shutil import move
 
-from numpy import full
+from numpy import append, full
 
 
 def is_odd(a_number):
@@ -292,7 +292,10 @@ def loops_7():
     This is a hard problem. Use lots of experimentation and draw
     lots of diagrams!
     """
-    full_list = []
+    pyramid = []
+
+    space_no = 4
+    ast_no = 1
 
     for i in range(5):
 
@@ -300,11 +303,20 @@ def loops_7():
 
         for j in range(9):
 
-            row.append("*") 
+            if j < space_no or j >= space_no + ast_no:
 
-        full_list.append(row)
+                row.append(" ")
 
-    return full_list
+            else:
+
+                row.append("*")
+
+        pyramid.append(row)
+
+        space_no -= 1
+        ast_no += 2
+
+    return pyramid
 
 
 def little_printer(some_kind_of_list, exercise_name):

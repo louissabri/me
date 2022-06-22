@@ -35,3 +35,5 @@ I feel like I am starting to understand programming.
 11:10 Question, to "call" something means to run that code/function right? 
 
 (p.s. I havent been working this whole time on one problem dont worry, I went to get snacks then accidentally didnt come back for a while).
+
+I got everything working! It took a while to click in my brain, but once I realised that I could create more variables and manipulate them at will, it was fairly simple to solve.

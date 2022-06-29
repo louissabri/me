@@ -98,7 +98,7 @@ def super_asker(low, high):
                 print("Thanks for conforming >:)")
                 return number_test
             else:
-                print(f"{number} isn't between {low} and {high} >:(")
+                print(f"{number_test} isn't between {low} and {high} >:(")
         except:
             print(f"{input_something} isn't a number silly!")
 

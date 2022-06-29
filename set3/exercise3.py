@@ -4,6 +4,7 @@ Steps on the way to making your own guessing game.
 """
 
 import random
+import time
 
 
 def advancedGuessingGame():
@@ -28,8 +29,54 @@ def advancedGuessingGame():
     Remember to think modular. Try to keep your functions small and single
     purpose if you can!
     """
+    print("\nWelcome to the guessing game!")
+
+    while True:
+      lowerBound = input("Enter a lower bound: ")
+      try:
+        lowerBound = int(lowerBound)
+        print(f"Great choice!")
+        break
+      except:
+        print(f"{lowerBound} isn't a valid number! >:(")
+
+    while True:
+      upperBound = input(f"Enter an upper bound: ")
+      try:
+        upperBound = int(upperBound)
+        if upperBound >= lowerBound:
+          print(f"Excelent choice! Generating a random number between {lowerBound} and {upperBound}...")
+          time.sleep(1.5)
+          break
+        else:
+          print(f"Choose a number bigger than {lowerBound}")
+      except:
+        print(f"{upperBound} isn't a valid number >:(")
+
+    actualNumber = random.randint(lowerBound, upperBound)
+
+    guessed = False
+
+    while not guessed:
+        guessedNumber = (input(f"Guess a number between {lowerBound} and {upperBound}: "))
+        try:
+          guessedNumber = int(guessedNumber)
+          print(f"You guessed {guessedNumber},")
+          if guessedNumber == actualNumber:
+            print(f"You got it!! It was {actualNumber}")
+            guessed = True
+          elif guessedNumber < lowerBound or guessedNumber > upperBound:
+            print(f"I said between {lowerBound} and {upperBound}...")
+          elif guessedNumber < actualNumber:
+            print("Too small, try again :'(")
+          else:
+            print("Too big, try again :'(")
+        except:
+          print(f"{guessedNumber} isn't a valid number >:(")
 
     return "You got it!"
+
+    #return "You got it!"
     # the tests are looking for the exact string "You got it!". Don't modify that!
 
 

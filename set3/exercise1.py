@@ -5,6 +5,12 @@ Modify each function until the tests pass.
 """
 
 
+from email import message
+from tokenize import Intnumber
+
+from numpy import true_divide
+
+
 def loop_ranger(start, stop=None, step=1):
     """Return a list of numbers between start and stop in steps of step.
 
@@ -17,7 +23,13 @@ def loop_ranger(start, stop=None, step=1):
     Look up for how range() works in the python docs. You could  answer this
     with just the range function, but we'd like you to do it the long way.
     """
-    return None
+    list = []
+
+    for i in range(start, stop, step):
+
+        list.append(i)
+        
+    return list
 
 
 def two_step_ranger(start, stop):
@@ -28,7 +40,13 @@ def two_step_ranger(start, stop):
 
     You can either reuse loop_ranger, or the range function that in the standard library
     """
-    return None
+    list = []
+
+    for i in range(start, stop, 2):
+
+        list.append(i)
+
+    return list
 
 
 def stubborn_asker(low, high):
@@ -39,8 +57,16 @@ def stubborn_asker(low, high):
 
     Look up the docs for a function called "input"
     """
-    return None
-
+    
+    while True:
+        input_number = input(f"Give me a number between {low} and {high}:")
+        number = int(input_number)
+        if low < number < high:
+            print("Thanks for conforming >:)")
+            return number
+        else:
+            print(f"{number} isn't between {low} and {high} >:(")
+        
 
 def not_number_rejector(message):
     """Ask for a number repeatedly until actually given one.
@@ -49,8 +75,14 @@ def not_number_rejector(message):
     (e.g. "cow", "six", "8!") then throw it out and ask for an actual number.
     When you do get a number, return it.
     """
-    return None
-
+    while True:
+        input_something = input(f"you know the drill 😎. Give me a number:")
+        try:
+            number_test = int(input_something)
+            print("Thanks for conforming once again >:) Mwahahahahahahahaaaaaa!!")
+            return number_test
+        except:
+            print(f"{input_something} isn't a number silly!")
 
 def super_asker(low, high):
     """Robust asking function.
@@ -58,7 +90,17 @@ def super_asker(low, high):
     Combine what you learnt from stubborn_asker and not_number_rejector
     to make a function that does it all!
     """
-    return None
+    while True:
+        input_something = input("Give me a number please!:")
+        try:
+            number_test = int(input_something)
+            if low < number_test < high:
+                print("Thanks for conforming >:)")
+                return number_test
+            else:
+                print(f"{number} isn't between {low} and {high} >:(")
+        except:
+            print(f"{input_something} isn't a number silly!")
 
 
 if __name__ == "__main__":

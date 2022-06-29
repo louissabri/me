@@ -1,1 +1,3 @@
 TODO: Reflect on what you learned this week and what is still unclear.
+
+30/06/2022 12:04 working through these exercises one by one has been super cool, I love seeing how the stuff I learned earlier translates. Kudos to you btw Ben, the pacing feels really good I feel like I'm challenged just enough by each new exercise to keep it interesting, without being completely stuck every time I start something new.

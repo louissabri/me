@@ -42,9 +42,6 @@ def binary_search(low, high, actual_number):
         low = guess
         tries += 1
 
-      else:
-        return("number not found")
-
 
 if __name__ == "__main__":
     print(binary_search(1, 100, 5))

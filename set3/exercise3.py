@@ -46,7 +46,6 @@ def advancedGuessingGame():
         upperBound = int(upperBound)
         if upperBound >= lowerBound:
           print(f"Excelent choice! Generating a random number between {lowerBound} and {upperBound}...")
-          time.sleep(1.5)
           break
         else:
           print(f"Choose a number bigger than {lowerBound}")

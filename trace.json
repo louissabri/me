@@ -147,7 +147,129 @@
     ],
     "week_number": 2
   },
-  "3",
+  {
+    "of_total": 29,
+    "mark": 14,
+    "results": [
+      {
+        "value": 1,
+        "name": "Exercise 1: Loop ranger (3, 8, 1)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Loop ranger (100, 104, 2)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Two step ranger (100, 104)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Two step ranger (100, 104)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Stubborn asker"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: Stubborn asker"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: not_number_rejector"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 1: test_super_asker"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 2: example guessing game"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, U&L"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, polite failures"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, lowerBound bigger than upperBound"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, no range to guess in (delta 1)"
+      },
+      {
+        "value": 1,
+        "name": "Exercise 3: guessing game, no range to guess in (equal)"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 1, high: 100, target: 5) Look low"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 1, high: 100, target: 6) Look low"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 1, high: 100, target: 95) Look high"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 1, high: 51, target: 5) Look low"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 1, high: 50, target: 5) Look low"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 88) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 61) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 35) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 21) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 54) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 24) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 41) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 66) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 62) randomly generated test value"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 4: binary_search (low: 0, high: 100, target: 62) randomly generated test value"
+      }
+    ],
+    "week_number": 3
+  },
   "4",
   "5",
   "6",

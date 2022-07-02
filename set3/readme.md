@@ -2,6 +2,21 @@ TODO: Reflect on what you learned this week and what is still unclear.
 
 29/06/22 12:48 I can't get loop_ranger to work with a while loop & in the interest of time I am going to move on but I would like to come back to this and work it out.
 
+ list = []
+
+    for i in range(start, stop, step):
+
+        list.append(i)
+        
+    return list
+
+    list = []
+    while start is not stop:
+
+        list.append(start + step)
+
+    return list
+
 14:11 I'm stuck on stubborn_asker, it seems to me that i've got it working perfectly when I run the program, yet the tests are not happy with me. I'm not sure where I'm getting it wrong.
 
 17:30 I went through the solution posted on the website and managed to get it working (with some tweaking, for some reason it didn't work when I copied the code from the video directly)

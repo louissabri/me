@@ -20,4 +20,4 @@ I changed the while loop to
 
 while low <= high in order to fix this and now it works!
 
-(if i'm completely honest I don't *fully* understand why this this is right now and I don't intend to look into it until morning. I just remembered Louis mentioning that he came across this problem and that changing the while loop was how he solved it.)
+(if I'm completely honest I don't *fully* understand why this this is right now and I don't intend to look into it until morning. I just remembered Louis mentioning that he came across this problem and that changing the while loop was how he solved it.)

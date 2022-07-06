@@ -18,3 +18,6 @@ or use this tool to generate my own dataset of twitter users. Could be interesti
 
 Edit: ended up going with the 2nd dataset (twitter stuffs).
 
+6/7/22 15:07 Starting on set 4, I've finished going through IOexamples.py and am now going to attempt ex 1!
+
+I remember Ben talking about something important to do with IO in the lecture, but that was a few weeks ago and I've forgotten what he said. I guess this is why it's important to do the work on time.

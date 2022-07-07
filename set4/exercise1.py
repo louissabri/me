@@ -3,6 +3,7 @@
 
 import json
 import os
+from threading import local
 import requests
 import inspect
 import sys
@@ -37,10 +38,27 @@ def get_some_details():
          dictionary, you'll need integer indeces for lists, and named keys for
          dictionaries.
     """
-    json_data = open(LOCAL + "/lazyduck.json").read()
+    # Open JSON file, convert data to a dictionary & store it in variable "contents"
+    mode = "r"
+    with open((LOCAL + "\lazyduck.json"), mode, encoding="utf-8") as some_details:
+        some_details = json.load(some_details)
 
-    data = json.loads(json_data)
-    return {"lastName": None, "password": None, "postcodePlusID": None}
+        # get required data and store in variables
+        lastName = some_details["results"][0]["name"]["last"]
+        password = some_details["results"][0]["login"]["password"]
+        postcode = some_details["results"][0]["location"]["postcode"]
+        id_value = some_details["results"][0]["id"]["value"]
+
+        # converting "postcode" & "id_value" into ints
+        postcode = int(postcode)
+        id_value = int(id_value)
+
+        # add "postcode" & "id_value"
+        postcodePlusID = (postcode + id_value)
+
+        # print(lastName, password, postcodePlusID)
+
+    return {"lastName": lastName, "password": password, "postcodePlusID": postcodePlusID}
 
 
 def wordy_pyramid():

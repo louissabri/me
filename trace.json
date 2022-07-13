@@ -272,7 +272,7 @@
   },
   {
     "of_total": 7,
-    "mark": 6,
+    "mark": 7,
     "results": [
       {
         "value": 1,
@@ -299,7 +299,7 @@
         "name": "Exercise 1: Consult the Pokedex."
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: count the lasers."
       }
     ],

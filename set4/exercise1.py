@@ -9,6 +9,7 @@ import py
 import requests
 import inspect
 import sys
+import re
 
 # Handy constants
 LOCAL = os.path.dirname(os.path.realpath(__file__))  # the context of this file
@@ -143,6 +144,7 @@ def pokedex(low=1, high=5):
     """
     heightList = []
 
+    # put the height of each pokemon within the range specified into a list
     for id in range(low, high):
         url = f"https://pokeapi.co/api/v2/pokemon/{id}"
         r = requests.get(url)
@@ -155,11 +157,13 @@ def pokedex(low=1, high=5):
         else:
             return "Data not found"
 
+    # Find the ID of the tallest pokemon in the range
     tallest_value = max(heightList)
     tallest_index = heightList.index(tallest_value)
 
     tallest_id = tallest_index + low
 
+    # pull the required info of the tallest pokemon and return it in a dict.
     url = f"https://pokeapi.co/api/v2/pokemon/{tallest_id}"
     r = requests.get(url)
     if r.status_code is 200:
@@ -188,7 +192,13 @@ def diarist():
 
     NOTE: this function doesn't return anything. It has the _side effect_ of modifying the file system
     """
-    pass
+    with open(LOCAL + "/Trispokedovetiles(laser).gcode", "r", encoding="utf-8") as gcode:
+        data = gcode.read()
+        count = data.count('M10 P1')
+
+    # write the answer to a file called 'lasers.pew' in the Set4 dir
+    with open(LOCAL + "\lasers.pew", "w", encoding="utf-8") as pew_num:
+        pew_num.write(f"{count}")
 
 
 if __name__ == "__main__":

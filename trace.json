@@ -272,30 +272,30 @@
   },
   {
     "of_total": 7,
-    "mark": 1,
+    "mark": 6,
     "results": [
       {
         "value": 1,
         "name": "Exercise 1: get some data out of a JSON file"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: request some words from the internet"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: Consult the Pokedex."
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: Consult the Pokedex."
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: Consult the Pokedex."
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: Consult the Pokedex."
       },
       {
@@ -308,7 +308,12 @@
   "5",
   "6",
   "7",
-  "8",
+  {
+    "of_total": 0,
+    "mark": 0,
+    "results": [],
+    "week_number": 8
+  },
   "9",
   "10"
 ]

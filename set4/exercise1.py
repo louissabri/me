@@ -4,6 +4,8 @@
 import json
 import os
 from threading import local
+from tkinter import W
+import py
 import requests
 import inspect
 import sys
@@ -54,11 +56,15 @@ def get_some_details():
         id_value = int(id_value)
 
         # add "postcode" & "id_value"
-        postcodePlusID = (postcode + id_value)
+        postcodePlusID = postcode + id_value
 
         # print(lastName, password, postcodePlusID)
 
-    return {"lastName": lastName, "password": password, "postcodePlusID": postcodePlusID}
+    return {
+        "lastName": lastName,
+        "password": password,
+        "postcodePlusID": postcodePlusID,
+    }
 
 
 def wordy_pyramid():
@@ -95,7 +101,28 @@ def wordy_pyramid():
     ]
     TIP: to add an argument to a URL, use: ?argName=argVal e.g. &wordlength=
     """
+    startNum = 3
+    stopNum = 21
+    stepNum = 2
+
     pyramid = []
+
+    # counting up from startNum to stopNum, with incraments of stepNum
+    for wordLength in range(startNum, stopNum, stepNum):
+
+        # importing a random word & decoding it from bites to a string (length of word == wordLength variable), then adding it to the list
+        word = requests.get(f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={wordLength}")
+        word = word.text
+        pyramid.append(word)
+
+        # counting back down from stopNum to startNum with the same increments as before (stepNum is negative as we are counting backwards)
+        if wordLength >= stopNum - stepNum:
+            for negWordLength in range(stopNum - 1, startNum, -stepNum):
+
+                # importing a random world & decoding... length of word == negWordLength.
+                word = requests.get(f"https://us-central1-waldenpondpress.cloudfunctions.net/give_me_a_word?wordlength={negWordLength}")
+                word = word.text
+                pyramid.append(word)
 
     return pyramid
 
@@ -114,13 +141,34 @@ def pokedex(low=1, high=5):
          get very long. If you are accessing a thing often, assign it to a
          variable and then future access will be easier.
     """
-    id = 5
-    url = f"https://pokeapi.co/api/v2/pokemon/{id}"
+    heightList = []
+
+    for id in range(low, high):
+        url = f"https://pokeapi.co/api/v2/pokemon/{id}"
+        r = requests.get(url)
+        if r.status_code is 200:
+            data = json.loads(r.text)
+            height = data["height"]
+
+            heightList.append(height)
+
+        else:
+            return "Data not found"
+
+    tallest_value = max(heightList)
+    tallest_index = heightList.index(tallest_value)
+
+    tallest_id = tallest_index + low
+
+    url = f"https://pokeapi.co/api/v2/pokemon/{tallest_id}"
     r = requests.get(url)
     if r.status_code is 200:
-        the_json = json.loads(r.text)
-
-    return {"name": None, "weight": None, "height": None}
+            data = json.loads(r.text)
+            pokename = data["name"]
+            pokeweight = data["weight"]
+            pokeheight = data["height"]
+    
+    return {"name": pokename, "weight": pokeweight, "height": pokeheight}
 
 
 def diarist():

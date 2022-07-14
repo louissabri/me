@@ -7,32 +7,42 @@ You have 2 hours.
 """
 import string
 import time
+from typing import final
+from xml.sax.xmlreader import InputSource
 
 
 def string_please() -> str:
     """Returns a string, anything you like."""
-    return None
+    a_string = "this is a string"
+    return a_string
 
 
 def list_please() -> list:
     """Returns a list, anything you like."""
-    return None
+    a_list = ["list"]
+
+    return a_list
 
 
 def dictionary_please() -> dict:
     """Returns a dictionary, anything you like."""
-    return None
+    a_dict = {"key": "item"}
+    return a_dict
 
 
 def is_it_5(some_number) -> bool:
     """Returns True if the argument passed is 5, otherwise returns False."""
-    well_is_it = None
+    well_is_it = False
+
+    if some_number == 5:
+        well_is_it = True
     return well_is_it
 
 
 def take_five(some_number) -> int:
     """Subtracts 5 from some_number."""
-    return None
+    final_num = some_number - 5
+    return final_num
 
 
 def greet(name="Towering Timmy") -> str:
@@ -40,7 +50,7 @@ def greet(name="Towering Timmy") -> str:
     return a string of "Hello " and the name argument.
     E.g. if given as "Towering Timmy" it should return "Hello Towering Timmy"
     """
-    return None
+    return(f"Hello {name}")
 
 
 def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]) -> int:
@@ -48,7 +58,8 @@ def three_counter(input_list=[1, 4, 3, 5, 7, 1, 3, 2, 3, 3, 5, 3, 7]) -> int:
     Return an integer.
     TIP: the test will use a different input_list, so don't just return 5
     """
-    count = 0
+    count = input_list.count(3)
+
     return count
 
 
@@ -58,7 +69,8 @@ def n_counter(
     """Count the number of times search_for_this shows up in the input_list.
     Return an integer.
     """
-    count = 0
+    count = input_list.count(search_for_this)
+
     return count
 
 
@@ -79,7 +91,16 @@ def fizz_buzz() -> list:
          'FizzBuzz', 16, 17, ...]
     """
     fizzBuzzList = []
-    # your code here
+    
+    for number in range(1,100):
+        if number % 3 == 0:
+            fizzBuzzList.append("Fizz")
+        if number % 5 == 0:
+            fizzBuzzList.append("Buzz")
+        if number % 3 == 0 and number % 5 == 0:
+            fizzBuzzList.append("FizzBuzz")
+        else:
+            fizzBuzzList.append(number)
 
     return fizzBuzzList
 
@@ -94,9 +115,16 @@ def put_behind_bars(input_string="very naughty boy") -> str:
     TIP: consider using the 'join' method in Python.
     TIP: make sure that you have a pipe on both ends of the string.
     """
+    text = list(input_string)
+    bars = "|"
 
-    return None
+    textStr = bars.join(text)
 
+    textStrList = list("|" + textStr + "|")
+
+
+
+    return textStrList
 
 def pet_filter(letter="a") -> list:
     """Return a list of pets whose name contains the character 'letter'"""
@@ -111,9 +139,13 @@ def pet_filter(letter="a") -> list:
             "siamese fighting fish","fancy rat and lab rat","mink","red fox",
             "hedgehog","guppy",]
     # fmt: on
-    filtered = []
+    pets_filtered = []
 
-    return filtered
+    for i in range(len(pets) - 1):
+        if letter in pets[i]:
+            pets_filtered.append(pets[i])
+
+    return pets_filtered
 
 
 def best_letter_for_pets() -> str:

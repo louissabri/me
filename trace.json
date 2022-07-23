@@ -305,7 +305,73 @@
     ],
     "week_number": 4
   },
-  "5",
+  {
+    "of_total": 15,
+    "mark": 8,
+    "results": [
+      {
+        "value": 1,
+        "name": "exercise 1: get_a_word_of_length_n baaed"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: get_a_word_of_length_n xanthane"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: get_a_word_of_length_n yuft"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: get_a_word_of_length_n None"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: get_a_word_of_length_n None"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: list_of_words_with_lengths {word}"
+      },
+      {
+        "value": 0,
+        "name": "exercise 1: list_of_words_with_lengths {word}"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: wordy_pyramid has been refactored"
+      },
+      {
+        "value": 0,
+        "name": "Exercise 1: wordy_pyramid still works"
+      },
+      {
+        "value": 0,
+        "name": "exercise 2: abba baaab\u21e8bbaoaaobaobaobbbaaobaobbbaaobaobbbabbaoaaob"
+      },
+      {
+        "value": 0,
+        "name": "exercise 2: abba b\u21e8bbaoaaob"
+      },
+      {
+        "value": 0,
+        "name": "exercise 2: abba roof\u21e8roabbaoabbaf"
+      },
+      {
+        "value": 0,
+        "name": "exercise 2: abba hell\u21e8hell"
+      },
+      {
+        "value": 0,
+        "name": "exercise 2: Koch _|-|_"
+      },
+      {
+        "value": 1,
+        "name": "exercise 2: Koch _^_"
+      }
+    ],
+    "week_number": 5
+  },
   "6",
   "7",
   {

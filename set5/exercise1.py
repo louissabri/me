@@ -27,7 +27,7 @@ Modify this function, don't write a whole new one.
 def wordy_pyramid():
 
     pyramid_list = []
-    
+
     list_1 = list_of_words_with_lengths([3, 21, 2])
     list_2 = list_of_words_with_lengths([20, 3, -2])
 
@@ -42,18 +42,19 @@ def get_a_word_of_length_n(length):
         "give_me_a_word?wordlength={length}"
     )
 
-    url = baseURL.format(length = length)
+    url = baseURL.format(length=length)
     r = requests.get(url)
     if r.status_code is 200:
         message = r.text
         return message
+
 
 def list_of_words_with_lengths(list_of_lengths):
     pyramid_list = []
 
     for length in range(list_of_lengths[0], list_of_lengths[1], list_of_lengths[2]):
         pyramid_list.append(get_a_word_of_length_n(length))
-    
+
     return pyramid_list
 
 

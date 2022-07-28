@@ -8,6 +8,7 @@ You have 2 hours.
 import json
 import os
 import random
+from re import A
 import string
 import time
 from tkinter import W
@@ -304,24 +305,33 @@ def fast_filler(number_of_words=200) -> str:
     """
     fname = "dict_cache.json"
 
+# check if json file containing the dictionary exists at specified location & save dict to variable "myDict"
+# if file does not exist, load data and save to file in specified location
     if os.path.exists(fname):
         with open(fname, "r", encoding="utf-8") as f:
-            
             myDict = json.load(f)
-            words = []
 
-            for i in range(number_of_words):
-                length = random.randint(3, 7)
-                wordchoice = random.randint(0, 3)
-                words.append(myDict[length][wordchoice])
-            para = " ".join(words) + "."
-            return para.capitalize
-            
-        
     else:
         d = make_filler_text_dictionary()
         outfile = open(fname, "w")
         json.dump(d, outfile)
+    
+# generate a paragraph of text using random words out of the dictionary.
+    words = []
+
+    for i in range(number_of_words):
+        length = str(random.randint(3, 7))
+        wordchoice = random.randint(0, 3)
+        words.append(myDict[length][wordchoice])
+
+    para = " ".join(words)
+
+# make the paragraph pretty! (capitalise first letter & add a full-stop)
+    capitalisedPara = para.capitalize()
+    prettyPara = f"{capitalisedPara}."
+
+    return prettyPara
+
 
 
 if __name__ == "__main__":

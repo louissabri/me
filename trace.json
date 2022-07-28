@@ -307,23 +307,19 @@
   },
   {
     "of_total": 15,
-    "mark": 8,
+    "mark": 9,
     "results": [
       {
         "value": 1,
-        "name": "exercise 1: get_a_word_of_length_n baaed"
+        "name": "exercise 1: get_a_word_of_length_n dabba"
       },
       {
         "value": 1,
-        "name": "exercise 1: get_a_word_of_length_n xanthane"
+        "name": "exercise 1: get_a_word_of_length_n nabalism"
       },
       {
         "value": 1,
-        "name": "exercise 1: get_a_word_of_length_n yuft"
-      },
-      {
-        "value": 1,
-        "name": "exercise 1: get_a_word_of_length_n None"
+        "name": "exercise 1: get_a_word_of_length_n saad"
       },
       {
         "value": 1,
@@ -331,18 +327,22 @@
       },
       {
         "value": 1,
-        "name": "exercise 1: list_of_words_with_lengths {word}"
+        "name": "exercise 1: get_a_word_of_length_n None"
+      },
+      {
+        "value": 1,
+        "name": "exercise 1: list_of_words_with_lengths None"
       },
       {
         "value": 0,
-        "name": "exercise 1: list_of_words_with_lengths {word}"
+        "name": "exercise 1: list_of_words_with_lengths None"
       },
       {
         "value": 1,
         "name": "exercise 1: wordy_pyramid has been refactored"
       },
       {
-        "value": 0,
+        "value": 1,
         "name": "Exercise 1: wordy_pyramid still works"
       },
       {
@@ -375,9 +375,146 @@
   "6",
   "7",
   {
-    "of_total": 0,
-    "mark": 0,
-    "results": [],
+    "of_total": 34,
+    "mark": 29,
+    "results": [
+      {
+        "value": 1,
+        "name": "\ngive_me_five:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\npassword_please:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nlist_please:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nint_list_please:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nstring_list_please:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\ndictionary_please:\n    given:    * no args *\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nis_it_5:\n    given:    5\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nis_it_5:\n    given:    4\n    expected: False\n    got:      False"
+      },
+      {
+        "value": 1,
+        "name": "\nis_it_5:\n    given:    cats\n    expected: False\n    got:      False"
+      },
+      {
+        "value": 1,
+        "name": "\ntake_five:\n    given:    5\n    expected: 0\n    got:      0"
+      },
+      {
+        "value": 1,
+        "name": "\ntake_five:\n    given:    10\n    expected: 5\n    got:      5"
+      },
+      {
+        "value": 1,
+        "name": "\ntake_five:\n    given:    0\n    expected: -5\n    got:      -5"
+      },
+      {
+        "value": 1,
+        "name": "\ngreet:\n    given:    the Queen\n    expected: Well hello, the Queen\n    got:      Well hello, the Queen"
+      },
+      {
+        "value": 1,
+        "name": "\ngreet:\n    given:    Pr\u2642nc\u2640\u2642\n    expected: Well hello, Pr\u2642nc\u2640\u2642\n    got:      Well hello, Pr\u2642nc\u2640\u2642"
+      },
+      {
+        "value": 0,
+        "name": "\none_counter:\n    given:    [1, 1, 1, 3, 3]\n    expected: 3\n    got:      1"
+      },
+      {
+        "value": 1,
+        "name": "\none_counter:\n    given:    [0, 1, 2, 5, -9]\n    expected: 1\n    got:      1"
+      },
+      {
+        "value": 1,
+        "name": "\nn_counter:\n    given:    7\n    expected: 0\n    got:      0"
+      },
+      {
+        "value": 1,
+        "name": "\nn_counter:\n    given:    [4, [4, 0, 4]]\n    expected: 2\n    got:      2"
+      },
+      {
+        "value": 1,
+        "name": "\nn_counter:\n    given:    [0, [0, 0, 0, '0', 'zero']]\n    expected: 3\n    got:      3"
+      },
+      {
+        "value": 1,
+        "name": "\nfizz_buzz:\n    given:    * no args *\n    expected: [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz', 'Fizz', 22, 23, 'Fizz', 'Buzz', 26, 'Fizz', 28, 29, 'FizzBuzz', 31, 32, 'Fizz', 34, 'Buzz', 'Fizz', 37, 38, 'Fizz', 'Buzz', 41, 'Fizz', 43, 44, 'FizzBuzz', 46, 47, 'Fizz', 49, 'Buzz', 'Fizz', 52, 53, 'Fizz', 'Buzz', 56, 'Fizz', 58, 59, 'FizzBuzz', 61, 62, 'Fizz', 64, 'Buzz', 'Fizz', 67, 68, 'Fizz', 'Buzz', 71, 'Fizz', 73, 74, 'FizzBuzz', 76, 77, 'Fizz', 79, 'Buzz', 'Fizz', 82, 83, 'Fizz', 'Buzz', 86, 'Fizz', 88, 89, 'FizzBuzz', 91, 92, 'Fizz', 94, 'Buzz', 'Fizz', 97, 98, 'Fizz', 'Buzz']\n    got:      [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz', 16, 17, 'Fizz', 19, 'Buzz', 'Fizz', 22, 23, 'Fizz', 'Buzz', 26, 'Fizz', 28, 29, 'FizzBuzz', 31, 32, 'Fizz', 34, 'Buzz', 'Fizz', 37, 38, 'Fizz', 'Buzz', 41, 'Fizz', 43, 44, 'FizzBuzz', 46, 47, 'Fizz', 49, 'Buzz', 'Fizz', 52, 53, 'Fizz', 'Buzz', 56, 'Fizz', 58, 59, 'FizzBuzz', 61, 62, 'Fizz', 64, 'Buzz', 'Fizz', 67, 68, 'Fizz', 'Buzz', 71, 'Fizz', 73, 74, 'FizzBuzz', 76, 77, 'Fizz', 79, 'Buzz', 'Fizz', 82, 83, 'Fizz', 'Buzz', 86, 'Fizz', 88, 89, 'FizzBuzz', 91, 92, 'Fizz', 94, 'Buzz', 'Fizz', 97, 98, 'Fizz', 'Buzz']"
+      },
+      {
+        "value": 1,
+        "name": "\nset_it_on_fire:\n    given:    this disco\n    expected: \ud83d\udd25T\ud83d\udd25H\ud83d\udd25I\ud83d\udd25S\ud83d\udd25 \ud83d\udd25D\ud83d\udd25I\ud83d\udd25S\ud83d\udd25C\ud83d\udd25O\ud83d\udd25\n    got:      \ud83d\udd25T\ud83d\udd25H\ud83d\udd25I\ud83d\udd25S\ud83d\udd25 \ud83d\udd25D\ud83d\udd25I\ud83d\udd25S\ud83d\udd25C\ud83d\udd25O\ud83d\udd25"
+      },
+      {
+        "value": 1,
+        "name": "\nset_it_on_fire:\n    given:    \ud83d\udca5\ud83d\udca5\ud83d\udca5\n    expected: \ud83d\udd25\ud83d\udca5\ud83d\udd25\ud83d\udca5\ud83d\udd25\ud83d\udca5\ud83d\udd25\n    got:      \ud83d\udd25\ud83d\udca5\ud83d\udd25\ud83d\udca5\ud83d\udd25\ud83d\udca5\ud83d\udd25"
+      },
+      {
+        "value": 1,
+        "name": "\nset_it_on_fire:\n    given:    \ud83d\udc96my heart\ud83d\udc96\n    expected: \ud83d\udd25\ud83d\udc96\ud83d\udd25M\ud83d\udd25Y\ud83d\udd25 \ud83d\udd25H\ud83d\udd25E\ud83d\udd25A\ud83d\udd25R\ud83d\udd25T\ud83d\udd25\ud83d\udc96\ud83d\udd25\n    got:      \ud83d\udd25\ud83d\udc96\ud83d\udd25M\ud83d\udd25Y\ud83d\udd25 \ud83d\udd25H\ud83d\udd25E\ud83d\udd25A\ud83d\udd25R\ud83d\udd25T\ud83d\udd25\ud83d\udc96\ud83d\udd25"
+      },
+      {
+        "value": 1,
+        "name": "\npet_filter:\n    given:    x\n    expected: ['red fox']\n    got:      ['red fox']"
+      },
+      {
+        "value": 1,
+        "name": "\npet_filter:\n    given:    q\n    expected: []\n    got:      []"
+      },
+      {
+        "value": 1,
+        "name": "\npet_filter:\n    given:    p\n    expected: ['pig', 'sheep', 'guinea pig', 'python', 'scorpion', 'pigeon', 'alpaca', 'guppy']\n    got:      ['pig', 'sheep', 'guinea pig', 'python', 'scorpion', 'pigeon', 'alpaca', 'guppy']"
+      },
+      {
+        "value": 1,
+        "name": "\nbest_letter_for_pets:\n    given:    * no args *\n    expected: e\n    got:      e"
+      },
+      {
+        "value": 1,
+        "name": "\nmake_filler_text_dictionary:\n    given:    * no args *\n    expected: [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]\n    got:      [[3, 3, 3, 3], [4, 4, 4, 4], [5, 5, 5, 5], [6, 6, 6, 6], [7, 7, 7, 7]]"
+      },
+      {
+        "value": 1,
+        "name": "\nrandom_filler_text:\n    given:    50\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 1,
+        "name": "\nrandom_filler_text:\n    given:    1000\n    expected: True\n    got:      True"
+      },
+      {
+        "value": 0,
+        "name": "\nfast_filler:\n    given:    [100]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+      },
+      {
+        "value": 0,
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+      },
+      {
+        "value": 0,
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+      },
+      {
+        "value": 0,
+        "name": "subsequent fast_filler failed: Object of type function is not JSON serializable"
+      }
+    ],
     "week_number": 8
   },
   "9",

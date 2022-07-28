@@ -106,7 +106,7 @@ def one_counter(input_list=[1, 4, 1, 5, 1, 1]) -> int:
 
     for i in range(len(input_list)):
         if input_list[i] == 1:
-            count = +1
+            count += 1
 
     return count
 
@@ -305,11 +305,19 @@ def fast_filler(number_of_words=200) -> str:
     fname = "dict_cache.json"
 
     if os.path.exists(fname):
-        for i in range(number_of_words):
-            with open(fname, "r", encoding="utf-8") as f:
-                myDict = json.load(f)
-                randWord = myDict[random.randint(3, 7)]
-        return randWord
+        with open(fname, "r", encoding="utf-8") as f:
+            
+            myDict = json.load(f)
+            words = []
+
+            for i in range(number_of_words):
+                length = random.randint(3, 7)
+                wordchoice = random.randint(0, 3)
+                words.append(myDict[length][wordchoice])
+            para = " ".join(words) + "."
+            return para.capitalize
+            
+        
     else:
         d = make_filler_text_dictionary()
         outfile = open(fname, "w")

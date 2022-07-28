@@ -500,19 +500,19 @@
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [100]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+        "name": "\nfast_filler:\n    given:    [100]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Object of type function is not JSON serializable"
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
       },
       {
         "value": 0,
-        "name": "subsequent fast_filler failed: Object of type function is not JSON serializable"
+        "name": "subsequent fast_filler failed: Expecting value: line 1 column 1 (char 0)"
       }
     ],
     "week_number": 8

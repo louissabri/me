@@ -10,6 +10,7 @@ import os
 import random
 import string
 import time
+from tkinter import W
 import requests
 from typing import Dict, List
 
@@ -310,8 +311,9 @@ def fast_filler(number_of_words=200) -> str:
                 randWord = myDict[random.randint(3, 7)]
         return randWord
     else:
-        d = make_filler_text_dictionary
-        json.dump(d(), fname)
+        d = make_filler_text_dictionary()
+        outfile = open(fname, "w")
+        json.dump(d, outfile)
 
 
 if __name__ == "__main__":

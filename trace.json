@@ -500,19 +500,19 @@
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [100]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
+        "name": "\nfast_filler:\n    given:    [100]\n    expected: True\n    got:      6"
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      7"
       },
       {
         "value": 0,
-        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      Expecting value: line 1 column 1 (char 0)"
+        "name": "\nfast_filler:\n    given:    [10]\n    expected: True\n    got:      4"
       },
       {
         "value": 0,
-        "name": "subsequent fast_filler failed: Expecting value: line 1 column 1 (char 0)"
+        "name": "subsequent fast_filler failed: 3"
       }
     ],
     "week_number": 8

@@ -310,7 +310,8 @@ def fast_filler(number_of_words=200) -> str:
                 randWord = myDict[random.randint(3, 7)]
         return randWord
     else:
-        json.dump(make_filler_text_dictionary(), fname)
+        d = make_filler_text_dictionary
+        json.dump(d(), fname)
 
 
 if __name__ == "__main__":
